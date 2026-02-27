@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root, .dark {
+  --background: #0B0F19;
+  --surface: #111827;
+  --card: rgba(255, 255, 255, 0.05);
+  --text-primary: #E5E7EB;
+  --text-secondary: #9CA3AF;
+  --border: rgba(255, 255, 255, 0.08);
+  --accent: #6366f1;
+}
+
+@theme {
+  --color-theme-bg: var(--background);
+  --color-theme-surface: var(--surface);
+  --color-theme-card: var(--card);
+  --color-theme-text: var(--text-primary);
+  --color-theme-text-sub: var(--text-secondary);
+  --color-theme-border: var(--border);
+  --color-theme-accent: var(--accent);
+}
+
+/* Base styles */
+body {
+    background-color: var(--background);
+    color: var(--text-primary);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+@layer base {
+    button {
+        cursor: pointer;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--border);
+        border-radius: 0.375rem;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--text-secondary);
+    }
+
+    .dark input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(100%);
+    }
+
+    input[type="checkbox"] {
+        appearance: none;
+        background-color: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 9999px;
+        cursor: pointer;
+        width: 1rem;
+        height: 1rem;
+    }
+
+    input[type="checkbox"]:checked {
+        background-color: var(--accent);
+        border-color: var(--accent);
+    }
+}
