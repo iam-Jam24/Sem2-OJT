@@ -1,4 +1,4 @@
-# Synvex Project Management Dashboard
+# Project Management Dashboard
 
 A modern, highly-responsive, dark-themed SaaS dashboard designed for agile project and team management. Built with a focus on performance, aesthetics, and user experience, this platform provides real-time visibility into project statuses, task delegation, and team collaboration.
 
