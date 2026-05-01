@@ -51,6 +51,3 @@ Before you begin, ensure you have **Node.js** (v18 or higher) and **Git** instal
    ```bash
    npm run build
    ```
-
-## 🎨 Design Philosophy
-This project ditches the standard neo-brutalist or flat light modes in favor of a permanent, immersive dark mode. By centralizing our design tokens in pure CSS variables, components instantly adapt their border, surface, and text contrasts while maintaining absolute consistency.
