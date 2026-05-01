@@ -22,14 +22,21 @@ A modern, highly-responsive, dark-themed SaaS dashboard designed for agile proje
 
 ## 🛠️ Setup Instructions
 
+### Prerequisites
+Before you begin, ensure you have **Node.js** (v18 or higher) and **Git** installed on your system.
+- **Mac Users**: We recommend installing Node.js via Homebrew: `brew install node`
+- **Windows Users**: Download and install Node.js from the official website or use `winget install OpenJS.NodeJS`
+
+### Installation Steps (Mac & Windows)
+
 1. **Clone the repository**:
+   Open your terminal (Mac) or Command Prompt/PowerShell (Windows) and run:
    ```bash
    git clone https://github.com/iam-Jam24/Sem2-OJT.git
    cd Sem2-OJT
    ```
 
 2. **Install Dependencies**:
-   Ensure you have Node.js installed, then run:
    ```bash
    npm install
    ```
@@ -38,15 +45,12 @@ A modern, highly-responsive, dark-themed SaaS dashboard designed for agile proje
    ```bash
    npm run dev
    ```
+   *The application will automatically open in your default browser at `http://localhost:5173`.*
 
-4. **Build for Production**:
+4. **Build for Production** (Optional):
    ```bash
    npm run build
    ```
 
 ## 🎨 Design Philosophy
 This project ditches the standard neo-brutalist or flat light modes in favor of a permanent, immersive dark mode. By centralizing our design tokens in pure CSS variables, components instantly adapt their border, surface, and text contrasts while maintaining absolute consistency.
-
-// 843fmi
-
-// lzcbz
